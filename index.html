@@ -4,6 +4,19 @@
         <title>Joel Kuehl</title>
         <script type="module" src="js/header_footer.js"></script>
         <link rel="stylesheet" href="css/style_head_foot.css">
+        <script type="text/javascript">
+            $(document).ready(function(){    
+                //Check if the current URL contains '#'
+                if(document.URL.indexOf("index.html")==-1){
+                    // Set the URL to whatever it was plus "#".
+                    url = document.URL+"/index.html";
+                    location = "#";
+            
+                    //Reload the page
+                    location.reload(true);
+                }
+            });
+            </script>
     </head>
     <body>
         <my-header></my-header>
