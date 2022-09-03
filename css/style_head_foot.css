@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Inconsolata', monospace;
-    color: rgba(21, 20, 20, 0.95);
+    color: rgba(13, 13, 13, 0.95);
 }
 
 
@@ -12,7 +12,7 @@ html, body, p {
 }
 
 html {
-    background-color: #7EA1BF;
+    background-color: rgba(191, 182, 138);
 }
 
 .main-nav ul {
@@ -26,49 +26,75 @@ html {
 }
 
 .main-nav ul li {
+    width: auto;
     padding: 0.5em;
     font-size: 1.1em;
 }
 
 .main-nav ul li :hover {
-    background-color: #7ea1bf40; opacity: 0.3;
+    background-color: rgba(126, 161, 191, 0.315); opacity: 0.3;
 }
 
 .main-header {
     height: 6em;
     position: sticky; top: 0;
     width: auto;
-    background-color: #7EA1BF;
+    background-color: rgba(191, 182, 138);
+    align-items: center;
+}
+
+.section-me-desc {
+    width: auto;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
 .section-me {
+    width: auto;
     padding: 0;
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: rgba(242, 242, 242);
 }
 .section-me p {
-    padding: 0.5em;
+    padding: 0.6em;
+    padding-right: 50px;
+    font-size: 24px;
+}
+
+
+.section-me-img img {
+    width: 400px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
 }
 .section-projects {
     padding: 0;
-    background-color: #0d0d0d;
+    background-color: rgba(13, 13, 13);
 }
 
 .section-projects p {
-    color: #f2f2f2;
-    padding: 0.5em;
+    color: rgba(242, 242, 242);
+    padding: 0.6em;
 }
 
 
 .section-websites {
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: rgba(242, 242, 242);
 }
 .section-websites p {
-    padding: 0.5em;
+    padding: 0.6em;
 }
 
 .section {
     margin: 0 20px;
+}
+
+.subtitles {
+    padding: 0.4em;
+    margin: 0;
+    font-size: 64px;
 }
