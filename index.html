@@ -4,19 +4,9 @@
         <title>Joel Kuehl</title>
         <script type="module" src="js/header_footer.js"></script>
         <link rel="stylesheet" href="css/style_head_foot.css">
-        <script type="text/javascript">
-            $(document).ready(function(){    
-                //Check if the current URL contains '#'
-                if(document.URL.indexOf("index.html")==-1){
-                    // Set the URL to whatever it was plus "#".
-                    url = document.URL+"/index.html";
-                    location = "#";
-            
-                    //Reload the page
-                    location.reload(true);
-                }
-            });
-            </script>
+        <link rel="stylesheet" href="css/styles_body.css">
+        
+        
     </head>
     <body>
         <my-header></my-header>
@@ -35,9 +25,14 @@
                 <div class="section-me-img">
                     <img src="img/viso jo simply.png">
                 </div>
+                
             </div>
+            
+            <a href="about.html" class="button-more"><p>More</p></a>
+            
         </div>
         <div class="section section-projects">
+            <h2 class="subtitles" style="color: rgba(242, 242, 242);">Projects</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut urna nec ex posuere sodales. Nam condimentum eu nibh porta aliquam. Maecenas eget quam in dui lacinia aliquam vel id enim. 
                 Vivamus ac est scelerisque, sagittis metus eget, mollis lorem. Sed ullamcorper sem at magna vestibulum, eu porta elit interdum. Nulla facilisi. Integer in gravida turpis. 
@@ -54,6 +49,7 @@
             </p>
         </div>
         <div class="section section-websites">
+            <h2 class="subtitles">Websites</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut urna nec ex posuere sodales. Nam condimentum eu nibh porta aliquam. Maecenas eget quam in dui lacinia aliquam vel id enim. 
                 Vivamus ac est scelerisque, sagittis metus eget, mollis lorem. Sed ullamcorper sem at magna vestibulum, eu porta elit interdum. Nulla facilisi. Integer in gravida turpis. 
@@ -69,17 +65,6 @@
                 Nulla facilisi. Sed a arcu blandit, molestie sem sed, tempus magna. Maecenas eget ante quis mauris accumsan consequat nec quis enim.
             </p>
         </div>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
+        <my-footer></my-footer>
     </body>
 </html>
