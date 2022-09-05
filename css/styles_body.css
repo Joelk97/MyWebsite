@@ -6,6 +6,15 @@
     color: rgba(13, 13, 13, 0.95);
 }
 
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
 
 html, body, p {
     margin: 0;
