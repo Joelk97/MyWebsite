@@ -57,8 +57,10 @@ html {
     background-color: rgba(242, 242, 242);
 }
 .section-me p {
-    padding: 0.6em;
-    padding-right: 50px;
+    padding: 10px;
+    padding-left: 25.6px;
+    padding-bottom: 20px;
+    padding-right: 40px;
     font-size: 24px;
 }
 
