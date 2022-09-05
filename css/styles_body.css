@@ -1,0 +1,82 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap);
+* {
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    color: rgba(13, 13, 13, 0.95);
+}
+
+
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgba(191, 182, 138);
+}
+
+
+
+.section-me-desc {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-me {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(242, 242, 242);
+}
+.section-me p {
+    padding: 10px;
+    padding-left: 25.6px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    font-size: 24px;
+}
+
+
+.section-me-img img {
+    width: 400px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    opacity: 0.9;
+
+}
+.section-projects {
+    padding: 0;
+    background-color: rgba(13, 13, 13);
+}
+
+.section-projects p {
+    color: rgba(242, 242, 242);
+    padding: 0.6em;
+}
+
+
+.section-websites {
+    padding: 0;
+    background-color: rgba(242, 242, 242);
+}
+.section-websites p {
+    padding: 0.6em;
+}
+
+.section {
+    margin: 0 20px;
+}
+
+.subtitles {
+    padding: 0.4em;
+    margin: 0;
+    font-size: 64px;
+}
+
+.button-more p {
+    font-size: 18px;
+}
