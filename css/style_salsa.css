@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Qwitcher+Grypen:wght@400;700&display=swap');
+* {
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+.titolo {
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+}
+
+.titolo-shop {
+    height: 4em;
+}
+
 .site {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column; 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+     
 }
 .site-content {
     flex: 1;
@@ -9,11 +25,18 @@
 .foto-articolo img {
     width: 150px;
 }
-
+.spazio-attivita {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border: 3px black solid;
+    padding: 0 20px;
+    margin: 0 2em;
+}
 .spazio-shop {
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 110%;
     border: 3px black solid;
     padding: 0 20px;
     margin: 0 2em;
@@ -22,13 +45,33 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 10px;
+    align-items: baseline;
+    height: 110%;
     
 }
 .articolo {
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 3px black solid;
 }
 
 .articolo img {
     padding: 1em;
     padding-bottom: 2em;
+}
+.testo-articolo, .prezzo-articolo {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    padding: 0 0.5em;
+}
+
+.tasto-articolo {
+    padding: 3px;
+}
+
+.btn {
+    font-size: 24px;
 }
