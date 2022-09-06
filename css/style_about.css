@@ -1,0 +1,22 @@
+
+
+.container-about {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    justify-content: space-around;
+
+}
+.about-section {
+    width: 40vw;
+}
+
+@media (max-width: 800px) {
+    .container-about {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-section {
+        width: 80vw;
+    }
+}
