@@ -1,3 +1,49 @@
-canvas {
-    display: block;
+.grid-item {
+    width: 600px;
+    height: 390px;
+    background: rgba(13, 13, 13);
+    margin: 5px;
+}
+.grid-item p {
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px auto 100px auto 100px;
+    grid-template-rows: repeat(3, 100px auto) 100px;
+    justify-content: space-around;
+}
+
+.project1 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.project2 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+.project3 {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+.project4 {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+.project5 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+.project6 {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+}
+
+.main-header {
+    background-color: rgba(13, 13, 13);
+}
+.main-nav li a {
+    color: whitesmoke;
 }
