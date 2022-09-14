@@ -41,6 +41,7 @@ var sketch3 = function(p) {
     };
     p.windowResized = function() {
         p.resizeCanvas(p.windowWidth, documentHeight);
+        positions();
         
     }
     p.draw = function() {
