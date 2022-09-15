@@ -10,8 +10,6 @@ positions();
 const widthProjects = rect1.RT[0]-rect1.LT[0];
 const heightProjects = rect1.LB[1]-rect1.LT[1];
 
-
-
 var sketch3 = function(p) {
    
     p.setup = function() {
@@ -34,17 +32,10 @@ var sketch3 = function(p) {
         treDimensionale(p, rect3);
         treDimensionale(p, rect2);
         treDimensionale(p, rect1);
-        
-        
     };
 };
 
-
-
-
 var myp5_3 = new p5(sketch3);
-
-
 
 treDimensionale = function(p, quadrato) {
         
@@ -97,8 +88,6 @@ treDimensionale = function(p, quadrato) {
             p.endShape();
         }
 
-
-
         p.fill(126,161,191);
         if(p.y<0){
             p.beginShape();
@@ -131,11 +120,6 @@ treDimensionale = function(p, quadrato) {
             p.endShape();
         }
         
-
-
-
-
-
         p.stroke(13, 13, 13);
 
         p.line(quadrato.LT[0], quadrato.LT[1], quadrato.LT[0]+p.x, quadrato.LT[1]+p.y);
@@ -153,7 +137,6 @@ treDimensionale = function(p, quadrato) {
             p.line(quadrato.LB[0]+p.x, quadrato.LB[1]+p.y, quadrato.RB[0]+p.x, quadrato.RB[1]+p.y);
         }
 }
-
 
 function positions(){
     documentHeight = document.body.offsetHeight;
