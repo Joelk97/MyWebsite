@@ -4,10 +4,10 @@ class myHeader extends HTMLElement {
         <header class="main-header">
             <nav class="nav main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="">Websites</a></li>
+                    <li><a class="insider-link" href="index.html">Home</a></li>
+                    <li><a class="insider-link" href="about.html">About</a></li>
+                    <li><a class="insider-link" href="projects.html">Projects</a></li>
+                    <li><a class="insider-link" href="">Websites</a></li>
                 </ul>
             </nav>
         </header>
