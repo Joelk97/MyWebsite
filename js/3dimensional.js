@@ -71,7 +71,7 @@ treDimensionale = function(p, quadrato) {
         if((quadrato.center[0] - p.windowWidth/2) < 0){
             p.x = 10;
         }else if((quadrato.center[0] - p.windowWidth/2) > 0) {
-             p.x = 10;
+             p.x = -10;
         }else{
             p.x = 0;
         };
@@ -96,23 +96,41 @@ treDimensionale = function(p, quadrato) {
             p.vertex(quadrato.LB[0]+p.x, quadrato.LB[1]+p.y);
             p.endShape();
         };
-        p.beginShape();
-        p.vertex(quadrato.RT[0], quadrato.RT[1]);
-        p.vertex(quadrato.RT[0]+p.x, quadrato.RT[1]+p.y);
-        p.vertex(quadrato.RB[0]+p.x, quadrato.RB[1]+p.y);
-        p.vertex(quadrato.RB[0], quadrato.RB[1]);
-        p.endShape();
-
+        if(p.x>0){
+            p.beginShape();
+            p.vertex(quadrato.RT[0], quadrato.RT[1]);
+            p.vertex(quadrato.RT[0]+p.x, quadrato.RT[1]+p.y);
+            p.vertex(quadrato.RB[0]+p.x, quadrato.RB[1]+p.y);
+            p.vertex(quadrato.RB[0], quadrato.RB[1]);
+            p.endShape();
+        }else if(p.x<0){
+            p.beginShape();
+            p.vertex(quadrato.LT[0], quadrato.LT[1]);
+            p.vertex(quadrato.LT[0]+p.x, quadrato.LT[1]+p.y);
+            p.vertex(quadrato.LB[0]+p.x, quadrato.LB[1]+p.y);
+            p.vertex(quadrato.LB[0], quadrato.LB[1]);
+            p.endShape();
+        }
         // Shadow
-        p.fill(13, 13, 13, 50);
-        p.noStroke();
-        p.beginShape();
-        p.vertex(quadrato.LB[0], quadrato.LB[1]);
-        p.vertex(quadrato.LB[0]-p.x, quadrato.LB[1]-p.y);
-        p.vertex(quadrato.LT[0]-p.x, quadrato.LT[1]-p.y);
-        p.vertex(quadrato.LT[0], quadrato.LT[1]);
-        p.endShape();
-
+        if(p.x>0){
+            p.fill(13, 13, 13, 50);
+            p.noStroke();
+            p.beginShape();
+            p.vertex(quadrato.LB[0], quadrato.LB[1]);
+            p.vertex(quadrato.LB[0]-p.x, quadrato.LB[1]-p.y);
+            p.vertex(quadrato.LT[0]-p.x, quadrato.LT[1]-p.y);
+            p.vertex(quadrato.LT[0], quadrato.LT[1]);
+            p.endShape();
+        } else if(p.x<0){
+            p.fill(13, 13, 13, 50);
+            p.noStroke();
+            p.beginShape();
+            p.vertex(quadrato.RB[0], quadrato.RB[1]);
+            p.vertex(quadrato.RB[0]-p.x, quadrato.RB[1]-p.y);
+            p.vertex(quadrato.RT[0]-p.x, quadrato.RT[1]-p.y);
+            p.vertex(quadrato.RT[0], quadrato.RT[1]);
+            p.endShape();
+        }
         if(p.y<0){
             p.beginShape();
             p.vertex(quadrato.LB[0], quadrato.LB[1]);
